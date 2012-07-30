@@ -1,4 +1,5 @@
 Colours::Application.routes.draw do
+  resources :colours
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
