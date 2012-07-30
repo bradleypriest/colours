@@ -10,7 +10,9 @@ Colours.ColourView = Ember.View.extend({
   click: function(event){
     event.preventDefault();
     colour = this.get('content')
-    colour.set('likesCount', colour.get('likesCount')+1)
+    count = colour.get('likesCount')
+    count++
+    colour.set('likesCount', count)
     colour.transaction.commit()
   },
 
