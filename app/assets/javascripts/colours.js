@@ -11,5 +11,5 @@ var router = Colours.router = Colours.Router.create({
   location: 'hash'
 });
 
-Colours.initialize(router);
+Colours.initialize();
 

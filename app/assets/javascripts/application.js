@@ -17,5 +17,10 @@
 //= require ember-data
 //= require_self
 //= require colours
-Colours = Ember.Application.create();
+Colours = Ember.Application.create({
+  Store: DS.Store.extend({
+    revision: 4,
+    adapter: DS.RESTAdapter.create()
+  })
+});
 //= require_tree .
