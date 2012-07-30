@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'active_model_serializers'
+gem 'active_model_serializers', github: 'josevalim/active_model_serializers'
 gem 'ember-rails'
 
 # To use ActiveModel has_secure_password
