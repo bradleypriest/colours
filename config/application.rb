@@ -58,5 +58,10 @@ module Colours
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators.rails({
+      helpers: false,
+      template_engine: nil
+    })
   end
 end
