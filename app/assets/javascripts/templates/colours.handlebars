@@ -1,5 +1,10 @@
-<h1>Colours</h1>
+{{collection contentBinding="controller" itemViewClass="Colours.ColourView"}}
 
-<p>Your content here.</p>
-
-{{outlet}}
+{{#if view.isEditing}}
+  {{view Ember.TextField valueBinding="view.content.label" placeholder="Colour Name"}}
+  {{view Ember.TextField valueBinding="view.content.value" placeholder="CSS Value"}}
+  <button {{action save target="view"}}>Save</button>
+  <button {{action cancel target="view"}}>Cancel</button>
+{{else}}
+  <button {{action addNew target="view"}}>Add New</button>
+{{/if}}
