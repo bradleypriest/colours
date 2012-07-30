@@ -1,5 +1,5 @@
 Colours::Application.routes.draw do
-  resources :colours
+  resources :colours, except: [:edit, :new]
   root to: "home#index"
 
   # The priority is based upon order of creation:
