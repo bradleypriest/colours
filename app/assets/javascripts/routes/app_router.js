@@ -5,8 +5,6 @@ Colours.Router = Ember.Router.extend({
       connectOutlets: function(router) {
         router.get('applicationController').connectOutlet("colours", Colours.Colour.find());
       }
-
-      // Layout your routes here...
     })
   })
 });

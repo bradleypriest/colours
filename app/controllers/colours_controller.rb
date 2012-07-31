@@ -6,7 +6,7 @@ class ColoursController < ApplicationController
   end
 
   def show
-    respond_with Colour.find(params[:id].to_s)
+    respond_with Colour.find(params[:id])
   end
 
   def create
